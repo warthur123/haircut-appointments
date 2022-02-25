@@ -10,7 +10,7 @@ const Appointments = props => {
     /* get all appointments to show */
     const getAllAppointments = async () => {
         try {
-            const response = await fetch("http://localhost:8000/all");
+            const response = await fetch("/all");
             const jsonData = await response.json();
             setAppointments(jsonData);
         } catch (error) {

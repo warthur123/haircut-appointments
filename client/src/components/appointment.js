@@ -41,7 +41,7 @@ const Appointment = props => {
         const email = document.getElementById('email-field').value;
         try {
             const body = { 'id': props.id, 'name': name, 'email': email };
-            const response = await fetch(`http://localhost:8000/reserve/${props.id}`, {
+            const response = await fetch(`/reserve/${props.id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
