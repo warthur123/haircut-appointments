@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React from "react";
+import { Container, AppBar, Typography } from "@mui/material";
+import Appointments from "./components/appointmentTable";
+
 import './App.css';
 
-function App() {
+
+const App = () => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container maxwidth="lg">
+        <AppBar position="static" color="inherit">
+          <Typography variant="h2" align="center">Arthur's Haircutting Appointments</Typography>
+        </AppBar>
+
+        <Container className="description">
+        <Typography variant="h6" align="center">These are the available times that Arthur can git haircuts. Reserve your haircut time slot today!</Typography>
+        <Typography variant="h6" align="center">If you face any issues with reserving, feel free to contact at arthurwu382@gmail.com</Typography>
+        </Container>
+
+
+        <Container className="main-content">
+          <Appointments />
+        </Container>
+      </Container>
     </div>
   );
 }
