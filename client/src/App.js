@@ -15,7 +15,7 @@ const App = () => {
         </AppBar>
 
         <Container className="description">
-        <Typography variant="h6" align="center">These are the available times that Arthur can git haircuts. Reserve your haircut time slot today!</Typography>
+        <Typography variant="h6" align="center">These are the available times that Arthur can give haircuts. Reserve your haircut time slot today!</Typography>
         <Typography variant="h6" align="center">If you face any issues with reserving, feel free to contact at arthurwu382@gmail.com</Typography>
         </Container>
 
